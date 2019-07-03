@@ -1,0 +1,59 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r10p3.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sat Mar  2 13:25:40 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190302/rtsaturi
+
+= Git history ==================================================================
+$> git -C /var/folders/xg/28lb8vq90p7cn8zn_s8b4zsw0000gp/T/tmpYzxT3e/user log --pretty='%H - %an, %ad : %s'
+992d4473fb6e847ac2cea3389efc10bddbac796f - Robert Tsaturian, Sat Mar 2 13:25:28 2019 -0800 : swap_b
+f47163976d1506956f6ba149311d7965d41e1e87 - Robert Tsaturian, Sat Mar 2 12:58:36 2019 -0800 : ulstr
+58886b4ee5be043891ac4a13c142f518cfef0945 - Robert Tsaturian, Sat Mar 2 12:42:30 2019 -0800 : only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/xg/28lb8vq90p7cn8zn_s8b4zsw0000gp/T/tmpYzxT3e/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  722 Mar  2 13:25 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Mar  2 13:25 only_z
+drwxr-xr-x  3 deepthought  deepthought  102 Mar  2 13:25 swap_bits
+drwxr-xr-x  3 deepthought  deepthought  102 Mar  2 13:25 ulstr
+
+/var/folders/xg/28lb8vq90p7cn8zn_s8b4zsw0000gp/T/tmpYzxT3e/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  960 Mar  2 13:25 only_z.c
+
+/var/folders/xg/28lb8vq90p7cn8zn_s8b4zsw0000gp/T/tmpYzxT3e/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  977 Mar  2 13:25 swap_bits.c
+
+/var/folders/xg/28lb8vq90p7cn8zn_s8b4zsw0000gp/T/tmpYzxT3e/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1282 Mar  2 13:25 ulstr.c
+ 
+= swap_bits ====================================================================
+$> gcc -Wextra -Wall -Werror main.c swap_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./6aqfju95jsgk2oxkbopycmn5
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

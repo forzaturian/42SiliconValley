@@ -1,0 +1,106 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p34.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri May 10 15:46:39 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190510/rtsaturi
+
+= Git history ==================================================================
+$> git -C /var/folders/gf/y7z8_rk941ngn2wb12bht3480000gp/T/tmp768S7x/user log --pretty='%H - %an, %ad : %s'
+0b38b9629833e57c806e9ceb74b008709374cfc2 - Robert Tsaturian, Fri May 10 15:46:12 2019 -0700 : lcm
+bf9b42cc4b511ece50205817eb31f0649e5b0bf9 - Robert Tsaturian, Fri May 10 15:34:42 2019 -0700 : ft_atoi_base
+8fc7b66a74c7bacb6d9b2469f263e5695a8bb1d7 - Robert Tsaturian, Fri May 10 15:13:19 2019 -0700 : ft_strcmp
+7b4ef3ebe83995aa443e875031a1683cfd1dc08f - Robert Tsaturian, Fri May 10 15:04:21 2019 -0700 : repeat_alpha
+7fb35f95df4a80f850d941a13c8d1e887c847481 - Robert Tsaturian, Fri May 10 14:42:16 2019 -0700 : first_par
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/gf/y7z8_rk941ngn2wb12bht3480000gp/T/tmp768S7x/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1298 May 10 15:46 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 May 10 15:46 aff_first_param
+drwxr-xr-x  3 deepthought  deepthought   102 May 10 15:46 ft_atoi_base
+drwxr-xr-x  3 deepthought  deepthought   102 May 10 15:46 ft_strcmp
+drwxr-xr-x  3 deepthought  deepthought   102 May 10 15:46 lcm
+drwxr-xr-x  3 deepthought  deepthought   102 May 10 15:46 repeat_alpha
+
+/var/folders/gf/y7z8_rk941ngn2wb12bht3480000gp/T/tmp768S7x/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1123 May 10 15:46 aff_first_param.c
+
+/var/folders/gf/y7z8_rk941ngn2wb12bht3480000gp/T/tmp768S7x/user/ft_atoi_base:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1804 May 10 15:46 ft_atoi_base.c
+
+/var/folders/gf/y7z8_rk941ngn2wb12bht3480000gp/T/tmp768S7x/user/ft_strcmp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1003 May 10 15:46 ft_strcmp.c
+
+/var/folders/gf/y7z8_rk941ngn2wb12bht3480000gp/T/tmp768S7x/user/lcm:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1092 May 10 15:46 lcm.c
+
+/var/folders/gf/y7z8_rk941ngn2wb12bht3480000gp/T/tmp768S7x/user/repeat_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1332 May 10 15:46 repeat_alpha.c
+ 
+= lcm ==========================================================================
+$> gcc -Wextra -Wall -Werror main.c lcm.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ajz9cleoqouma737sz8mq4gu 132 72
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./y7bhfe22hwpnucc510om0acf 54 45
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./sxupogn4597bzxk0rmgcgd7s 13 2
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./6u79vtfyp1ez8xufe2oj5rui 41 4
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./hlh6fslnofhbv8gx5wacktri 0 1
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./2hdh6tqta3kvj7vo4r5t9xa7 1 0
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./quwdgo7fpsb7a1a9gmx493f3 67 15
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./udc6lko174n75qinxcl5kam8 89 74
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

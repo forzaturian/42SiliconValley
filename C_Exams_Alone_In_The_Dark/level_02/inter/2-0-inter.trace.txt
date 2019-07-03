@@ -1,0 +1,154 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p36.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Mar  1 00:05:09 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190301/rtsaturi
+
+= Git history ==================================================================
+$> git -C /var/folders/9c/4csql95117x7chmq5n9g0d3w0000gp/T/tmpjqPOBY/user log --pretty='%H - %an, %ad : %s'
+49ab2ce779bb9dbb160464355a56fb960fa12a8b - Robert Tsaturian, Fri Mar 1 00:04:43 2019 -0800 : inter
+ae078c68a9c34cd15c66a3852117cfd55e5511fa - Robert Tsaturian, Thu Feb 28 23:34:46 2019 -0800 : ft_swap
+e6b1cd215cbc397109ccaac95f1968ac02ba2963 - Robert Tsaturian, Thu Feb 28 23:18:32 2019 -0800 : hello
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/9c/4csql95117x7chmq5n9g0d3w0000gp/T/tmpjqPOBY/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  734 Mar  1 00:05 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Mar  1 00:05 ft_swap
+drwxr-xr-x  3 deepthought  deepthought  102 Mar  1 00:05 hello
+drwxr-xr-x  3 deepthought  deepthought  102 Mar  1 00:05 inter
+
+/var/folders/9c/4csql95117x7chmq5n9g0d3w0000gp/T/tmpjqPOBY/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  961 Mar  1 00:05 ft_swap.c
+
+/var/folders/9c/4csql95117x7chmq5n9g0d3w0000gp/T/tmpjqPOBY/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  975 Mar  1 00:05 hello.c
+
+/var/folders/9c/4csql95117x7chmq5n9g0d3w0000gp/T/tmpjqPOBY/user/inter:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1775 Mar  1 00:05 inter.c
+ 
+= inter ========================================================================
+$> gcc -Wextra -Wall -Werror inter.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ws85t63je9zjmw6cwvtq3kuv 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./dcj7oov1kbf7tdcvy7ypfi4s "salut a tous tout le monde"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./2cu9y2d2qwlntjprsbpndefa "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./uxnzvfikvf2yygo8hmcqzwbp "llo" "helllo"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./vgv0ku4kjq9h6z0m5eya2z0z "43jBQGE" "3jG"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./1tradybok2gi6ln4nyi2dkaf "X4t" "Xt"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./6pqf9ui23v9bqp8bnynsbb1i "QiTM0D4V" "iTM4"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./dgdjk491ijcttgvksudfq7f4 "23YRuhEWgD" "2RuED"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./15j7mrz28i6y1sg88sh71eup "3rZ" "Z"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./pkztr67mppr9oi1az18uki3l "ZAck" "Zc"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./pkck8abkz2jhybwg7essj48j "l6Yk7cGHVIeqpydwZ" "lkcGIpw"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./drr6lmwdd3zwnd7h4g01w98k "6VAXxSg8amhqOQB" "LJlPQ9VmbT4Ygw"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./dcqg7yrweax0cn93e5qw6v5m "U4lIEP" "4E"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./j8kkhf0ydqrgb1uyrx77glik "2bAde" "0eHB"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./bb9ylwh0pvxkibjiavdm8gwf "EAN" "EA"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./ahe8uz7sst79prn92id1fovu "sbdXGUcvZlV014" "M2JICUjKQd"
+$> diff -U 3 user_output_test16 test16.output | cat -e
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./gon8kaaafhb79hogxv5x89ks "YyqF5Ezp" "A8aLxW6cFKVzi2BJ"
+$> diff -U 3 user_output_test17 test17.output | cat -e
+
+Diff OK :D
+= Test 18 ==================================================
+$> ./5ofxbqoofppjcijvfmp1wgv3 "AlhHVycSN58tb" "hyN58t"
+$> diff -U 3 user_output_test18 test18.output | cat -e
+
+Diff OK :D
+= Test 19 ==================================================
+$> ./h0m5om8i74hxpjlfczt7eudb "kGY4acw2zQXxVEib" "Y4czQxVEb"
+$> diff -U 3 user_output_test19 test19.output | cat -e
+
+Diff OK :D
+= Test 20 ==================================================
+$> ./pl90cq4apywedrrggesp9atb "HZMjb9RCVplsNXUaI" "ZMbClNa"
+$> diff -U 3 user_output_test20 test20.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

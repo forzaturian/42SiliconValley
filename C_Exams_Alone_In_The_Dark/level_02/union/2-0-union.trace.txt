@@ -1,0 +1,154 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p22.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue May  7 10:58:49 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/exam_20190507/rtsaturi
+
+= Git history ==================================================================
+$> git -C /var/folders/n_/5lpv9cns1rs4hfvfs8ytsg0r0000gp/T/tmpfUWI2W/user log --pretty='%H - %an, %ad : %s'
+939842fcf58970e3b45f4e85e480a45ab6dd15f7 - Exam 42, Tue May 7 10:58:35 2019 -0700 : union
+0efb33e1f7b3933450f0d6b4149ce2ee7f49eda3 - Exam 42, Tue May 7 09:26:13 2019 -0700 : rev_print
+1a2806adf38f06e3d336c0c9001c009616e901e4 - Exam 42, Tue May 7 09:14:40 2019 -0700 : aff_z
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/n_/5lpv9cns1rs4hfvfs8ytsg0r0000gp/T/tmpfUWI2W/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  688 May  7 10:58 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May  7 10:58 aff_z
+drwxr-xr-x  3 deepthought  deepthought  102 May  7 10:58 rev_print
+drwxr-xr-x  3 deepthought  deepthought  102 May  7 10:58 union
+
+/var/folders/n_/5lpv9cns1rs4hfvfs8ytsg0r0000gp/T/tmpfUWI2W/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  962 May  7 10:58 aff_z.c
+
+/var/folders/n_/5lpv9cns1rs4hfvfs8ytsg0r0000gp/T/tmpfUWI2W/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1120 May  7 10:58 rev_print.c
+
+/var/folders/n_/5lpv9cns1rs4hfvfs8ytsg0r0000gp/T/tmpfUWI2W/user/union:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1329 May  7 10:58 union.c
+ 
+= union ========================================================================
+$> gcc -Wextra -Wall -Werror union.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./nryzv84ntq202p114qrlbahm 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./fpw98ynm44iihlzi1wbl93ap "	 " " 		  "
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./0pjvwffkw87000mueozoog56 "iPg"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./foraawk01o612ev9jynpnyck "Ys3oilSKuMyztCdZJ" "BNFZCoMrg"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./ov8ocatk62bwymz6ym5nmeim "wZ3IhJ7" "KfLXwcg3behPM"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./pn3i1dtmq7v3t7b20dccaed6 "DatMZA1zmil" "fvbzGuYr8wcLoMN79"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./xo5q7wbndc3q6vudb6e8tf1v "vTMj8Fl9SdtfNA" "tIEflSqbrzGc5vnX"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./hnt7a1zvej664a40gxcy6lur "iExFh" "3acY0PBbz"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./8z6tscopjzp43tnpmsqc6byl "BjpZ9Nwzo" "0U8TIwLVDm1c9H"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./umfkrnk1sdsfzshmyaa1e7r3 "1wECl57Mzg" "bArm1TMaKJDUFRwj"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./qmluz7h466pa1rlo7uf3sf05 "jPZ7JtuiyTp" "EkxFjRhw4TsY5uXtN"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./tm7bd98wdtnqk41actbnjvc4 "Ft4IQbiZ" "UgJuYX2Ks0fpS4E7"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./09bn8foopcmnit0jexxam7t0 "k1V5ALhEpF8K9iUm7" "gnFlEQtH3qIrPAi"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./yu839rzefzgspkbxbu6v765t "Kk8lB5pY2qrI3" "TWG7LFrD0UP9O6e5"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./jvrabnm1osqm00yqlaknfxen "ZG04EHL3y5Ji" "ReDXV"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./j4theix4loh6thv2zca8nqa2 "LX4d1A" "8rA"
+$> diff -U 3 user_output_test16 test16.output | cat -e
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./f6yafyspd0p5kpxaxi5doodw "8q6mA0s7xtfIv9i" "VcTA5zfDLrJ4i78"
+$> diff -U 3 user_output_test17 test17.output | cat -e
+
+Diff OK :D
+= Test 18 ==================================================
+$> ./6lfoj7w2ak2px9c1ix2t6bc5 "avmPYJlB7" "hozF9RpvStnTK5c4"
+$> diff -U 3 user_output_test18 test18.output | cat -e
+
+Diff OK :D
+= Test 19 ==================================================
+$> ./sdk8lijhhwcrxpyn7u32kvzh "Ig91hla8viBGnWCc" "7s21aKR9"
+$> diff -U 3 user_output_test19 test19.output | cat -e
+
+Diff OK :D
+= Test 20 ==================================================
+$> ./ozutk251gdjgw49hixnr540y "Tbr" "OAjf"
+$> diff -U 3 user_output_test20 test20.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

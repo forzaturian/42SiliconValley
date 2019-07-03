@@ -1,0 +1,77 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r7p8.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sat Mar  2 16:26:22 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190302/rtsaturi
+
+= Git history ==================================================================
+$> git -C /var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user log --pretty='%H - %an, %ad : %s'
+6d49bdcf7eaca41e52415770edce509f3638d6aa - Robert Tsaturian, Sat Mar 2 16:26:10 2019 -0800 : print_m
+3abec0b81e1ee80577a1ff0ce94773320a78d071 - Robert Tsaturian, Sat Mar 2 16:21:19 2019 -0800 : fprime
+b3b334556dbf5ae4c4aeae994c2ee51436e65825 - Robert Tsaturian, Sat Mar 2 16:13:27 2019 -0800 : hidenp
+992d4473fb6e847ac2cea3389efc10bddbac796f - Robert Tsaturian, Sat Mar 2 13:25:28 2019 -0800 : swap_b
+f47163976d1506956f6ba149311d7965d41e1e87 - Robert Tsaturian, Sat Mar 2 12:58:36 2019 -0800 : ulstr
+58886b4ee5be043891ac4a13c142f518cfef0945 - Robert Tsaturian, Sat Mar 2 12:42:30 2019 -0800 : only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1490 Mar  2 16:26 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Mar  2 16:26 fprime
+drwxr-xr-x  3 deepthought  deepthought   102 Mar  2 16:26 hidenp
+drwxr-xr-x  3 deepthought  deepthought   102 Mar  2 16:26 only_z
+drwxr-xr-x  3 deepthought  deepthought   102 Mar  2 16:26 print_memory
+drwxr-xr-x  3 deepthought  deepthought   102 Mar  2 16:26 swap_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Mar  2 16:26 ulstr
+
+/var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user/fprime:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1259 Mar  2 16:26 fprime.c
+
+/var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user/hidenp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1159 Mar  2 16:26 hidenp.c
+
+/var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  960 Mar  2 16:26 only_z.c
+
+/var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user/print_memory:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1590 Mar  2 16:26 print_memory.c
+
+/var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  977 Mar  2 16:26 swap_bits.c
+
+/var/folders/ff/z292j9cn7n58vffmjh1v2_dw0000gp/T/tmppSVo_Z/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1282 Mar  2 16:26 ulstr.c
+ 
+= print_memory =================================================================
+$> gcc -Wextra -Wall -Werror print_memory.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./5f1ndopvmnpazlca2pzixvza
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

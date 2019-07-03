@@ -1,0 +1,120 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p10.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sun Apr  7 00:28:43 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190407/rtsaturi
+
+= Git history ==================================================================
+$> git -C /var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user log --pretty='%H - %an, %ad : %s'
+55fdee36dd5df75c8f35e93b24793f53bbe5855e - Robert Tsaturian, Sun Apr 7 00:28:29 2019 -0700 : brackets
+0d2941569d4aca44fac22123362c8c8f6617ec03 - Robert Tsaturian, Sun Apr 7 00:23:40 2019 -0700 : rev_w
+ed86f7f8aefb21743175d78ea1a18f5109173b2d - Robert Tsaturian, Sun Apr 7 00:21:41 2019 -0700 : rev_w
+579ab88b067cfa9fe5219dbfb6ecfbc151aca9b3 - Robert Tsaturian, Sun Apr 7 00:15:05 2019 -0700 : tab
+e660d4c22fe20a30111987d3982924f163b4680a - Robert Tsaturian, Sun Apr 7 00:04:52 2019 -0700 : atoi_base
+29af241de2f91bd3d353e2ad74df971382207379 - Robert Tsaturian, Sat Apr 6 23:44:03 2019 -0700 : atoi
+256242a945efbe7e4c2011e8f955b33e8856ee4e - Robert Tsaturian, Sat Apr 6 23:42:37 2019 -0700 : atoi
+efd9376af8716addbc2287d7b18b5d1de527c334 - Robert Tsaturian, Sat Apr 6 23:06:17 2019 -0700 : rev_print
+7b89d445dba5f136cfbe4b9daaa4401dac286f0a - Robert Tsaturian, Sat Apr 6 22:53:53 2019 -0700 : aff_z
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2331 Apr  7 00:28 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Apr  7 00:28 aff_z
+drwxr-xr-x  3 deepthought  deepthought   102 Apr  7 00:28 brackets
+drwxr-xr-x  3 deepthought  deepthought   102 Apr  7 00:28 ft_atoi
+drwxr-xr-x  3 deepthought  deepthought   102 Apr  7 00:28 ft_atoi_base
+drwxr-xr-x  3 deepthought  deepthought   102 Apr  7 00:28 rev_print
+drwxr-xr-x  3 deepthought  deepthought   102 Apr  7 00:28 rev_wstr
+drwxr-xr-x  3 deepthought  deepthought   102 Apr  7 00:28 tab_mult
+
+/var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  979 Apr  7 00:28 aff_z.c
+
+/var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user/brackets:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1649 Apr  7 00:28 brackets.c
+
+/var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user/ft_atoi:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1316 Apr  7 00:28 ft_atoi.c
+
+/var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user/ft_atoi_base:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1758 Apr  7 00:28 ft_atoi_base.c
+
+/var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1153 Apr  7 00:28 rev_print.c
+
+/var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user/rev_wstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1624 Apr  7 00:28 rev_wstr.c
+
+/var/folders/25/0ctv9b15365fl12mt8j46v200000gp/T/tmpyEM_2Q/user/tab_mult:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1869 Apr  7 00:28 tab_mult.c
+ 
+= brackets =====================================================================
+$> gcc -Wextra -Wall -Werror brackets.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./c3mx1wq4cdln0fmm34luusyx '(toto)'
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./fcr4u2ibzn3ic0izwxxhj3nj '([)]'
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./mof08qul4a0c3j9d2o6jnk8f '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}'
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./1xwg78itz11juamw70j1fu7t 
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./vuf9wglawg9cp5190i34omki '()' '[]' '{}' '' 'toto' '([{}[{(()[])}()]]())(((([])))())'
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./ihr76qdkbx8pkbkaula95f4i '()[]{}' '([{}])[({})]{([])}'
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./5qj96ewhewhub0bffcqdg1fr '(]' '{)' '[}' ')' '}' ')' '(' '{' '['
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./uio2xjyac1x3p28j2fhdsfsm '({)}' '[()]{}]' '])}' '([{' "(cette (trace n'a pas [de but precis]) {a part embeter (tout le monde)})"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

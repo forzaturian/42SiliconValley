@@ -1,0 +1,99 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p8.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sun May 19 17:46:16 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190520/rtsaturi
+
+= Git history ==================================================================
+$> git -C /var/folders/kd/nr9k8tzd39lf8kvbd96pl1xh0000gp/T/tmpmMRAGd/user log --pretty='%H - %an, %ad : %s'
+34101d060c2e4e12e249a07b6c9a644c4e60049f - Robert Tsaturian, Sun May 19 17:45:54 2019 -0700 : power
+85a1a21311e76ac0e4613db7ed3302b335354dab - Robert Tsaturian, Sun May 19 17:37:03 2019 -0700 : rev_print
+d284d659edb465346784af7faccc90d371d30949 - Robert Tsaturian, Sun May 19 17:27:29 2019 -0700 : hello
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/kd/nr9k8tzd39lf8kvbd96pl1xh0000gp/T/tmpmMRAGd/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  738 May 19 17:46 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 17:46 hello
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 17:46 is_power_of_2
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 17:46 rev_print
+
+/var/folders/kd/nr9k8tzd39lf8kvbd96pl1xh0000gp/T/tmpmMRAGd/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  974 May 19 17:46 hello.c
+
+/var/folders/kd/nr9k8tzd39lf8kvbd96pl1xh0000gp/T/tmpmMRAGd/user/is_power_of_2:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1048 May 19 17:46 is_power_of_2.c
+
+/var/folders/kd/nr9k8tzd39lf8kvbd96pl1xh0000gp/T/tmpmMRAGd/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1118 May 19 17:46 rev_print.c
+ 
+= is_power_of_2 ================================================================
+$> gcc -Wextra -Wall -Werror is_power_of_2.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./t2vhyf8zsfdon6y8zu0q0rdy 0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./cxlj08uum2j0rydlmgb4yd2e 1
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./gqs2l0tjn2qkvh0v3qgh0el2 2
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./y1xp5i01u8rr7z9anmhftjji 3
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./y04jpz8fmkr9yvuy0y9sbmnq 4
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./m20g7nxogrf18pr4knwoe4dd 1234
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./2q03skhriw1za0fhd28rbea0 2147483646
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./ol9xswfswlf8tkgdeaudgwu6 2147483648
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./er38qui6fhoxq6p8jcv760ms 4294967295
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
