@@ -15,14 +15,14 @@ int gcd(unsigned int a, unsigned int b)
     if (a == b)  
         return a;
     if (a > b)  
-        return gcd(a-b, b);  
-    return gcd(a, b-a);  
+        return (gcd(a-b, b));  
+    return (gcd(a, b-a));  
 }
-unsigned int    lcm(unsigned int a, unsigned int b)
+int    lcm(unsigned int x, unsigned int y)
 {
-    if (a == 0 || b == 0)
-        return 0;
-    return (a*b)/gcd(a, b);  
+    if (x == 0 || y == 0)
+        return (0);
+    return ((x * y)/gcd(x, y));  
 }  
   
 // TEST//
